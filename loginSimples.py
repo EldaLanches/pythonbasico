@@ -1,13 +1,13 @@
 while True:
-    try:
-        nome = input("Digite seu nome:").strip()
-        senha = input("Digite sua senha:").strip()
+    nome = input("Digite seu nome: ").strip()
+    if nome == "":
+        print("O nome não pode ser vazio.")
+        continue
 
-    if nome =="":
-        print("O nome nâo pode ser vazio. ")
+    senha = input("Digite sua senha: ").strip()
+    if len(senha) < 6:
+        print("A senha deve ter no mínimo 6 caracteres.")
+        continue
 
-    if senha 6 <=:
-        print("Deve ter no minimo 6 caracterer ")
-    else:
-        break
-    print("Login cadastrado com sucesso!. ")
+    print("Login cadastrado com sucesso!")
+    break
