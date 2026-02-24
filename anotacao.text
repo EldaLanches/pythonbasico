@@ -4,26 +4,12 @@ print('********jogo de adivinhação********')
 print('***********************************')
 
 
-print('1-Fácil')
-print('2-Médio')
-print('3-Difícil')
-
-opcao = int (input("\nEscolha uma opção: "))
-
-print("Você escolheu a opção", opcao)
-if (opcao ==1):
-    total_tentativas = 15
-    numero_secreto = random.randrange(1,100)
-elif(opcao ==2):
-    total_tentativas =10
-    numero_secreto = random.randrange(1,100)
-elif(opcao ==3):
-    total_tentativas =5
-    numero_secreto = random.randrange(1,100)
-else:
-    print("Opção inválida! - escolha novamente")
 
 
+
+numero_secreto = random.randrange(1,100)
+total_tentativas = 15
+rodada = 1
 
 for rodada in range(1,total_tentativas + 1):
     print("Tentativa {} de {}".format(rodada,total_tentativas))
@@ -51,4 +37,4 @@ for rodada in range(1,total_tentativas + 1):
         print("---- Você errou ;-; ----\n")
     rodada = rodada +1
 
-print("Fim de jogo. O número secreto era:", numero_secreto)
+print("Fim de jogo")
