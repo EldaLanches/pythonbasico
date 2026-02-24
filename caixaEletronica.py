@@ -8,7 +8,7 @@ while True:
             print("O saque deve ser menor que mil.")
             continue
         else:
-            print (" saque efetuado.") 
+            print ("Saque efetuado.") 
             break
     except ValueError:
         print ("Digite apenas números inteiros.")
